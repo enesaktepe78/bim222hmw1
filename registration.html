@@ -3,69 +3,108 @@
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  <title>Registration</title>
 <style>
-table, th, td {
-    border: 1px solid black;
-}
-a:link, a:visited {
-  color: purple;
+
+body{
+background-color:pink;
 }
 
-a.current:link, a.current:visited {
-  color: blue;
- 
-}
 </style>
 </head>
-<body style="background-color:pink;">
-<table style="width:100%">
-  <tr>
-    <td><h1><a href="home.html"> Home </a></h1></td>
-    <td><h1><a href="localdishes.html"> Localdishes </a></h1></td> 
-    <td><h1><a href="historicalplaces.html"> Historical Places </a></h1></td>
-	<td><h1><a href="usefullinks.html"> Useful Links </a></h1></td>
-    <td><h1><a href="aboutme.html"> About me </a></h1></td> 
-    <td><h1><a href="contactme.html"> Contact me </a></h1></td>
-	<td><h1><a href="registration.html" class="current"> Registration </a></h1></td>
-  </tr>
-  <tr>
-</table>
-<form action="thanks.html">
-  First name:<br>
-  <input type="text" name="firstname" value="">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" value="">
-  <br>
-  Date of Birth:<br>
-  <input type="text" name="dateofbirth" value="">
-  <br>
-  Email:<br>
-  <input type="text" name="email" value="">
-  <br>
-  Password:<br>
-  <input type="password" name="password" value="">
-  <br>
-  Gender:<br>
-  <form>
-  <select>
-    <option value="male">Male</option>
-    <option value="famale">Famale</option>
-  </select>
-  <br>
-  Interests:<br>
-  <input type="checkbox" name="vehicle1" value="swim">Swim
-  <br>
-  <input type="checkbox" name="vehicle1" value="walk">Walk
-  <br>
-  <input type="checkbox" name="vehicle1" value="bike">Cycling
-  <br>
-  <input type="checkbox" name="vehicle2" value="code">Code
-  <br><br>
-  
-  <input type="submit" value="Submit">
-  <input type="reset" value="Reset">
-  
-</form> 
+<body>
+<nav class="navbar navbar-default">
 
+    	<div class="container-fluid" id="main">
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" >
+				 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span> 
+				</button>
+    		</div> <!-- /collapsed navbar -->
+
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="navbar">
+        		<ul class="nav navbar-nav">
+          			<li > <a href="home.html">Home</a></li> 
+          			<li> <a href="localdishes.html">Localdishes</a></li> 
+					<li> <a href="historicalplaces.html">Historical Places</a></li>
+					<li> <a href="usefullinks.html">Useful Links</a></li> 
+          			<li> <a href="aboutme.html">About me</a></li> 
+					<li> <a href="contactme.html">Contact me</a></li>
+					<li class="active"> <a href="registration.html">Registration</a></li>
+        		</ul>
+        	</div> <!-- /un-collapsed navbar -->
+
+      	</div> <!-- /container -->
+</nav>
+
+<div class="container-fluid " style="margin-bottom:50px; margin-top:30px; ">
+  <div class="row ">
+     <div class="col-sm-4 " ></div>
+     <div class="col-sm-4 "  >
+		 <form action="thanks.html">
+		 
+         <div class="form-group">
+         <label for="firstname">First Name:</label>
+         <input type="name" class="form-control" id="firstname" required>
+         </div>
+		 
+		 <div class="form-group">
+         <label for="lastname">Last Name:</label>
+         <input type="name" class="form-control" id="lastname" required>
+         </div>
+		 
+		 <div class="form-group">
+         <label for="date">Date of Birth:</label>
+         <input type="date" class="form-control" id="date" required>
+         </div>
+		 
+		 <div class="form-group">
+		 <label for="pwd">Password:</label>
+		 <input type="password" class="form-control" id="pwd" required>
+		 </div>
+		 
+		 <div class="form-group">
+         <label for="email">Email:</label>
+         <input type="email" class="form-control" id="email" required>
+         </div>
+		 
+		 <select>
+         <option value="male">Male</option required>
+         <option value="famale">Famale</option required>
+         </select>
+		 
+		 <div class="checkbox">
+		 <label><input type="checkbox" value="">Swim</label>
+		 </div>
+		
+		 <div class="checkbox">
+		 <label><input type="checkbox" value="">Walk</label>
+		 </div>
+		
+		 <div class="checkbox">
+		 <label><input type="checkbox" value="">Cycling</label>
+		 </div>
+		
+		 <div class="checkbox">
+		 <label><input type="checkbox" value="">Code</label>
+		 </div>
+		 
+		 <button type="submit" class="btn btn-default">Submit</button>
+		 <button type="reset" class="btn btn-default">Reset</button>
+		 </form>
+	</div>
+    
+  </div>
+</div>
+   <!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
+</html>

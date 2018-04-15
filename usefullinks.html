@@ -3,45 +3,59 @@
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+ 
 <title>Useful links</title>
 <style>
-table, th, td {
-    border: 1px solid black;
-}
-a:link, a:visited {
-  color: purple;
-}
-
-a.current:link, a.current:visited {
-  color: blue;
- 
+body{
+ background-color:pink;
 }
 </style>
 </head>
-<body style="background-color:pink;">
-<table style="width:100%">
-  <tr>
-    <td><h1><a href="home.html"> Home </a></h1></td>
-    <td><h1><a href="localdishes.html"> Localdishes </a></h1></td> 
-    <td><h1><a href="historicalplaces.html"> Historical Places </a></h1></td>
-	<td><h1><a href="usefullinks.html" class="current"> Useful Links </a></h1></td>
-    <td><h1><a href="aboutme.html"> About me </a></h1></td> 
-    <td><h1><a href="contactme.html"> Contact me </a></h1></td>
-	<td><h1><a href="registration.html"> Registration </a></h1></td>
-  </tr>
-  <tr>
-</table>
- <h1>Train Station</h1>
- <p>Address: Hoşnudiye Street, 26130 Eskişehir Province</p>
- <p>Phone: (0222) 225 80 80</p>
- <h1>Bus Terminal</h1>
- <p>Şeker Street, Sivrihisar-2 St., 26120 Tepebaşı/Eskişehir</p>
- <p>Phone: (0222) 227 88 00</p>
- <h1>Eskisehir Public Hospital</h1>
- <p>Address: Yenidoğan Street, Havacılar St. Number:1, 26060 Odunpazarı/Eskişehir</p>
- <p>Phone:  (0222) 237 48 00</p>
- <h1>Anadolu University</h1>
- <p>Address: Yeşiltepe Street, Yunus Emre Campus, 26470 Tepebaşı/Eskişehir</p>
- <p>Phone: (0222) 335 05 80</p>
+<body>
+
+<nav class="navbar navbar-default">
+
+    	<div class="container-fluid" id="main">
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" >
+				 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span> 
+				</button>
+    		</div> <!-- /collapsed navbar -->
+
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="navbar">
+        		<ul class="nav navbar-nav">
+          			<li > <a href="home.html">Home</a></li> 
+          			<li> <a href="localdishes.html">Localdishes</a></li> 
+					<li> <a href="historicalplaces.html">Historical Places</a></li>
+					<li class="active"> <a href="usefullinks.html">Useful Links</a></li> 
+          			<li> <a href="aboutme.html">About me</a></li> 
+					<li> <a href="contactme.html">Contact me</a></li>
+					<li> <a href="registration.html">Registration</a></li>
+        		</ul>
+        	</div> <!-- /un-collapsed navbar -->
+
+      	</div> <!-- /container -->
+</nav>
+
+<div class="container fluid">
+
+
+ <h3><a href="http://www.eskisehir.bel.tr/ebb.php">Eskisehir</a></h3>
+ 
+ <h3><a href="https://en.0wikipedia.org/wiki/Eskişehir">Eskisehir Wikipedia</a></h3>
+ 
+ <h3><a href="https://www.anadolu.edu.tr/">Anadolu University</a></h3>
+  
+</div>
+   <!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
 </html>

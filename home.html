@@ -4,44 +4,60 @@
  <title>Home</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 <style>
- table, th, td {
-    border: 1px solid black;
+body{
+ background-color:powderblue;
 }
-a:link, a:visited {
-  color: purple;
-}
-
-a.current:link, a.current:visited {
-  color: blue;
- 
-}
-
 </style>
 </head>
-<body style="background-color:powderblue;">
-<table style="width:100%">
-  <tr>
-    <td><h1><a href="home.html" class="current"> Home </a></h1></td>
-    <td><h1><a href="localdishes.html"> Localdishes </a></h1></td> 
-    <td><h1><a href="historicalplaces.html"> Historical Places </a></h1></td>
-	<td><h1><a href="usefullinks.html"> Useful Links </a></h1></td>
-    <td><h1><a href="aboutme.html"> About me </a></h1></td> 
-    <td><h1><a href="contactme.html"> Contact me </a></h1></td>
-	<td><h1><a href="registration.html"> Registration </a></h1></td>
-  </tr>
-  <tr>
-</table>
+<body >
 
-<article class="article">
-  <h2>Eskişehir</h2>
+<nav class="navbar navbar-default">
+    	<div class="container-fluid">
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header ">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" >
+				 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span> 
+				</button>
+    		</div> <!-- /collapsed navbar -->
+
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="navbar">
+        		<ul class="nav navbar-nav">
+          			<li class="active"> <a href="home.html">Home</a></li> 
+          			<li> <a href="localdishes.html">Localdishes</a></li> 
+					<li> <a href="historicalplaces.html">Historical Places</a></li>
+					<li> <a href="usefullinks.html">Useful Links</a></li> 
+          			<li> <a href="aboutme.html">About me</a></li> 
+					<li> <a href="contactme.html">Contact me</a></li>
+					<li> <a href="registration.html">Registration</a></li>
+        		</ul>
+        	</div> <!-- /un-collapsed navbar -->
+
+      	</div> <!-- /container -->
+</nav>
+
+<div class="container fluid">
+
+  <h2>Eskişehir</h2 >
+  
   <p>Eskişehir is a city in northwestern Turkey and the capital of the Eskişehir Province.
   The urban population of the city is 717,135 with a metropolitan population of 826,135.</p>
   <p>The city is located on the banks of the Porsuk River, 792 m above sea level,
   where it overlooks the fertile Phrygian Valley. 
   In the nearby hills one can find hot springs.</p>
-  <p></p>
-</article>
-  <img src="eskisehir.jpeg" alt="error" width="720" height="356">
+  
+  <img class="img-responsive" src="eskisehir.jpeg" alt="error" width="720" height="356" >
+  
+</div>
+    <!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
+
 </html>

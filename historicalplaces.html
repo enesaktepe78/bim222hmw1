@@ -3,60 +3,83 @@
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 <title>About me</title>
 <style>
-table, th, td {
-    border: 1px solid black;
-}
-a:link, a:visited {
-  color: purple;
-}
-
-a.current:link, a.current:visited {
-  color: blue;
- 
+body{
+ background-color:pink;
 }
 </style>
 </head>
-<body style="background-color:pink;">
-<table style="width:100%">
-  <tr>
-    <td><h1><a href="home.html"> Home </a></h1></td>
-    <td><h1><a href="localdishes.html"> Localdishes </a></h1></td> 
-    <td><h1><a href="historicalplaces.html" class="current"> Historical Places </a></h1></td>
-	<td><h1><a href="usefullinks.html"> Useful Links </a></h1></td>
-    <td><h1><a href="aboutme.html"> About me </a></h1></td> 
-    <td><h1><a href="contactme.html"> Contact me </a></h1></td>
-	<td><h1><a href="registration.html"> Registration </a></h1></td>
-  </tr>
-  <tr>
-</table>
- <br>
- <h1>Yazılıkaya</h1>
- <img src="yazılıkaya.jpg" alt="error" width="300" height="207">
+<body>
+
+<nav class="navbar navbar-default">
+
+    	<div class="container-fluid" id="main">
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" >
+				 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span> 
+				</button>
+    		</div> <!-- /collapsed navbar -->
+
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="navbar">
+        		<ul class="nav navbar-nav">
+          			<li > <a href="home.html">Home</a></li> 
+          			<li> <a href="localdishes.html">Localdishes</a></li> 
+					<li class="active"> <a href="historicalplaces.html">Historical Places</a></li>
+					<li> <a href="usefullinks.html">Useful Links</a></li> 
+          			<li> <a href="aboutme.html">About me</a></li> 
+					<li> <a href="contactme.html">Contact me</a></li>
+					<li> <a href="registration.html">Registration</a></li>
+        		</ul>
+        	</div> <!-- /un-collapsed navbar -->
+
+      	</div> <!-- /container -->
+</nav>
  
-<article>
-<p>Yazılıkaya , Phrygian Yazılıkaya, or Midas City  is a village in
+<div class="container" style="margin-bottom:30px;">
+
+  <h1>Yazılıkaya</h1>
+  
+ <img class="img-responsive" src="yazılıkaya.jpg" alt="error" width="400" height="400"><br>
+ 
+ <p>
+ Yazılıkaya , Phrygian Yazılıkaya, or Midas City  is a village in
  Eskişehir Province Turkey known for its Phrygian archaeological
-remains and inscription mentioning Midas in Eskişehir Province Turkey
-known for its Phrygian archaeological remains and inscription mentioning
-Midas The ancient remains are sometimes called the Midas Monument or Midas
-City and were formerly identified as the tomb of Midas</p>
-</article>
+ remains and inscription mentioning Midas in Eskişehir Province Turkey
+ known for its Phrygian archaeological remains and inscription mentioning
+ Midas The ancient remains are sometimes called the Midas Monument or Midas
+ City and were formerly identified as the tomb of Midas
+</p>
 
   <h1>Odunpazarı</h1>
-  <img src="odunpazari.jpg" alt="error" width="300" height="207">
-<p>Odunpazarı, is a historic district of Eskişehir Province in the Central Anatolia
+  
+  <img class="img-responsive" src="odunpazari.jpg" alt="error" width="300" height="207">
+  
+ <p>Odunpazarı, is a historic district of Eskişehir Province in the Central Anatolia
  region of Turkey. Odunpazarı is one of the central districts of Eskişehir along
- with the district of Tepebaşı.</p>
+ with the district of Tepebaşı.
+ </p>
+ 
   <h1>Kurşunlu Mosque</h1>
-  <img src="kursunlu.jpg" alt="error" width="300" height="207">
-  <p>Kurşunlu Mosque and Complex  is a 
+ 
+  <img class="img-responsive" src="kursunlu.jpg" alt="error" width="300" height="207">
+  
+ <p>Kurşunlu Mosque and Complex  is a 
   16th-century Ottoman mosque and its social complex in Odunpazarı district of Eskişehir
   The mosqe and the complex were commissioned by the Ottoman vizier Çoban Mustafa 
-  Pasha, and were built between 1517 and 1525. </p>
+  Pasha, and were built between 1517 and 1525. 
+ </p>
   
-
-
+</div> 
+   <!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
 </html>

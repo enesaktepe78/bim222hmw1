@@ -3,38 +3,61 @@
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  <title>Contact Me</title>
 <style>
-table, th, td {
-    border: 1px solid black;
-}
-a:link, a:visited {
-  color: purple;
-}
-
-a.current:link, a.current:visited {
-  color: blue;
- 
+body{
+ background-color:pink;
 }
 
 </style>
 </head>
-<body style="background-color:pink;">
-  <table style="width:100%">
-  <tr>
-    <td><h1><a href="home.html"> Home </a></h1></td>
-    <td><h1><a href="localdishes.html"> Localdishes </a></h1></td> 
-    <td><h1><a href="historicalplaces.html"> Historical Places </a></h1></td>
-	<td><h1><a href="usefullinks.html"> Useful Links </a></h1></td>
-    <td><h1><a href="aboutme.html"> About me </a></h1></td> 
-    <td><h1><a href="contactme.html" class="current"> Contact me </a></h1></td>
-	<td><h1><a href="registration.html"> Registration </a></h1></td>
-  </tr>
-  <tr>
-</table>
-<h1>CONTACT</h1>
-<p>Enes AKTEPE</p>
-<p>enesaktepe78@gmail.com</p>
-<p>0507 547 9651</p>
+<body>
+ <nav class="navbar navbar-default">
+
+    	<div class="container-fluid" id="main">
+			<!-- start collapsed navbar -->
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" >
+				 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span> 
+				</button>
+    		</div> <!-- /collapsed navbar -->
+
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="navbar">
+        		<ul class="nav navbar-nav">
+          			<li > <a href="home.html">Home</a></li> 
+          			<li> <a href="localdishes.html">Localdishes</a></li> 
+					<li> <a href="historicalplaces.html">Historical Places</a></li>
+					<li> <a href="usefullinks.html">Useful Links</a></li> 
+          			<li> <a href="aboutme.html">About me</a></li> 
+					<li class="active"> <a href="contactme.html">Contact me</a></li>
+					<li> <a href="registration.html">Registration</a></li>
+        		</ul>
+        	</div> <!-- /un-collapsed navbar -->
+
+      	</div> <!-- /container -->
+</nav>
+
+<div class="container fluid" >
+<div class=" text-center mx-auto">
+  
+	<h1>CONTACT</h1>
+	<p>Enes AKTEPE</p>
+	<p>enesaktepe78@gmail.com</p>
+	<p>0507 547 9651</p>
+
+</div>
+</div>
+
+
+  <!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
 
 <html>
